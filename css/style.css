@@ -9,7 +9,7 @@
   width: 100%;
 } */
 #sidebar {
-  height: 500px;
+  height: 90vh;
   width: 15%;
   background-color: black;
 }
@@ -19,21 +19,21 @@
   top: 0;
   right: 0;
   width: 85%;
-  height: 80px;
+  height: 10vh;
   background-color: #02030a;
 }
 
 #main {
   position: absolute;
-  top: 80px;
+  top: 10vh;
   right: 0;
-  height: calc(500px - 80px);
-  width: 85%;
+  width: 85vw;
+  height: 80vh;
   background-color: #0d121c;
 }
 
 #player {
-  height: 80px;
+  height: 10vh;
   width: 100%;
   background-color: #232323;
 }
