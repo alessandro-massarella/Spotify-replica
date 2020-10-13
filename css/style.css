@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  height: 100%;
+  width: 100%;
+} */
+#sidebar {
+  height: 500px;
+  width: 15%;
+  background-color: black;
+}
+
+#up_bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 80px;
+  background-color: #02030a;
+}
+
+#main {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  height: calc(500px - 80px);
+  width: 85%;
+  background-color: #0d121c;
+}
+
+#player {
+  height: 80px;
+  width: 100%;
+  background-color: #232323;
+}
