@@ -4,26 +4,55 @@
     <meta charset="utf-8">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <main>
+
       <section id="sidebar">
+        <div class="logo flex">
+          <img class="scale_img" src="img/logo.svg" alt="spotify">
+        </div>
+        <div class="top-bottom-sidebar">
+          <div class="top-sidebar">
+            <nav>
+              <ul>
+                <li class="border_left_green"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Cerca</a></li>
+                <li><a href="#">La tua libreria</a></li>
+              </ul>
+            </nav>
+            <!-- playlist -->
+            <div id="playlist">
+              <ul>
+                <li><strong>PLAYLIST</strong></li>
+                <li><i class="fa fa-plus" aria-hidden="true"></i> Crea Playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="bottom_sidebar">
+            <p><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Installa app</p>
+            <div class="line"></div>
+            <p><i class="fa fa-user-circle" aria-hidden="true"><strong> John Doe</strong></i> </p>
+          </div>
+        </div>
       </section>
-      <section id="up_bar">
 
+      <section id="main-window">
+        <section id="up_bar">
+          <div class="">
+            <a class="button" href="#">EFFETTUA L'UPGRADE</a>
+          </div>
+        </section>
       </section>
-
-      <section id="main">
-
-      </section>
-
       <section id="player">
-
       </section>
-
-
-    </div>
-
+    </main>
   </body>
 </html>
