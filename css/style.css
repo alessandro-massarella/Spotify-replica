@@ -20,17 +20,22 @@ a {
   width: 40%;
 }
 
+.scale_ {
+  width: 150px;;
+}
+
 
 /* CONTAINER----- */
 
-.main {
-  width: 100%;
+main {
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 #sidebar {
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   width: 300px;
+  min-height: 300px;
   background-color: black;
 }
 
@@ -48,8 +53,9 @@ a {
   top: 0;
   right: 0;
   width: calc(100% - 300px);
-  height: calc(100% - 80px);
+  height: calc(100vh - 80px);
   background-color: #0d121c;
+  overflow-y: scroll;
 }
 
 #player {
@@ -81,13 +87,17 @@ a {
   padding-bottom: 5px;
 }
 
-#sidebar #playlist {
+#sidebar .top-sidebar #playlist ul {
   margin-top: 20px;
 }
 
 #playlist ul li {
   list-style: none;
   padding: 5px 0px;
+}
+
+#sidebar .top-bottom-sidebar .top-sidebar #playlist {
+  overflow-y: auto;
 }
 
 .line {
@@ -133,4 +143,65 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+/* -------SEZIONE ALBUM MAIN */
+#main-window .album .nav_bar {
+  margin-top: 80px;
+}
+
+#main-window .album .nav_bar ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 10px;
+}
+#main-window .album .nav_bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album .creato_per {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+/* -----sezione disco */
+.disco img {
+  width: 150px;
+}
+
+.recently_played h3,
+.creato_per h3,
+.artisti_pop h3 {
+  margin-left: 10px;
+}
+
+.dischi {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.disco {
+  margin: 10px;
+}
+
+ .titolo_disco {
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+ .artista {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* copertine nel cerchio */
+.circle {
+  border-radius: 50%;
 }
