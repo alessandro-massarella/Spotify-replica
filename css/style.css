@@ -17,7 +17,7 @@ a {
   align-items: center;
 }
 .scale_img {
-  width: 50%;
+  width: 40%;
 }
 
 .scale_ {
@@ -154,7 +154,16 @@ main {
   list-style: none;
   display: inline-block;
   padding: 10px 10px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* #main-window .nav_bar ul li:first-child a {
+  border-bottom: 2px solid #c0fe35;
+} */
+.green {
+  border-top: 2px solid #c0fe35;
+  width: 30%;
+  margin: 0 auto;
 }
 #main-window .album .nav_bar ul {
   display: flex;
