@@ -189,7 +189,6 @@ main {
 }
 
 .album .creato_per  {
-
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -243,6 +242,13 @@ justify-content: flex-start;
 .circle {
   border-radius: 50%;
 }
+
+/* sezione HOVER */
+
+
+
+
+
 
 
 /* -----------PLAYER-------- */
@@ -373,7 +379,8 @@ justify-content: flex-start;
 }
 
 /* cambio colori icone player */
-#player .player_dx .fa {
+#player .player_dx .fa,
+#player .player_center .time p {
   color: white;
 }
 
@@ -436,6 +443,9 @@ justify-content: flex-start;
   #up_bar {
     width: calc(100% - 60px);
     height: 80px;
+  }
+  .disco img {
+    width: 250px;
   }
 
 
