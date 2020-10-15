@@ -17,7 +17,7 @@ a {
   align-items: center;
 }
 .scale_img {
-  width: 40%;
+  width: 100px;
 }
 
 .scale_ {
@@ -28,6 +28,14 @@ a {
   width: 20px;
 }
 
+/* hover button */
+.grow { transition: all .1s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.hover_wh { transition: all .1s ease-in-out; }
+.hover_wh:hover {color: white;}
+
+.pointer { cursor: pointer; }
 /* CONTAINER----- */
 
 main {
@@ -142,7 +150,7 @@ main {
 } */
 
 /* UP BAR-------- */
-.button {
+#main-window #up_bar .button {
   border: 1px solid white;
   color: white;
   padding: 15px 32px;
@@ -153,6 +161,7 @@ main {
   font-size: 12px;
   margin-right: 15px;
 }
+
 
 #up_bar {
   display: flex;
