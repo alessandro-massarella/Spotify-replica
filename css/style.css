@@ -363,6 +363,13 @@ justify-content: flex-start;
   width: 200px;
   border-radius: 2px;
 }
+.line_2:hover {
+  border-top: 4px solid #c0fe35;
+  width: 200px;
+  border-radius: 2px;
+
+
+}
 .line_3 {
   border-top: 4px solid grey;
   width: 800px;
@@ -375,21 +382,49 @@ justify-content: flex-start;
   border-top: 4px solid white;
   width: 50px;
   border-radius: 2px;
-
-
 }
+.line_4:hover {
+  border-top: 4px solid #c0fe35;
+  width: 50px;
+  border-radius: 2px;
+}
+
 
 .line_5 {
   border-top: 4px solid grey;
   width: 50px;
   border-radius: 2px;
-
-
+  flex-shrink: 3;
 }
 .volume_line {
   display: flex;
   margin-right: 10px;
 }
+
+.dot {
+  display: none;
+}
+
+.line_2:hover + .dot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+  flex-shrink: 0;
+}
+.line_4:hover + .dot {
+  position: absolute;
+  right: 53px;
+  bottom: 32px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+
 
 /* debug */
 .player_sx {
