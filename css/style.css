@@ -66,6 +66,7 @@ main {
   width: calc(100% - 250px);
   height: 80px;
   background-color: rgba(0,0,0,0.5);
+  z-index: 3;
 }
 
 #main-window {
@@ -193,7 +194,7 @@ main {
 #main-window .album .nav_bar ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
